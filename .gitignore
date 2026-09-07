@@ -1,0 +1,8 @@
+node_modules
+dist
+deploy
+.env
+.env.local
+*.log
+.DS_Store
+data/lotes/*.geojson
