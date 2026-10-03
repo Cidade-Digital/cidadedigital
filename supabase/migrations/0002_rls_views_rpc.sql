@@ -154,6 +154,7 @@ language sql stable security invoker set search_path = public as $$
       case
         when ep.id is not null then 'ocupado'
         when lo.status_ocupacao = 'vago' then 'oportunidade'
+        when lo.status_ocupacao = 'residencial' then 'residencial'
         else 'ocupado'
       end as status_vitrine
     from lotes lo
